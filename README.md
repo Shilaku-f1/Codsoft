@@ -12,3 +12,9 @@ To run these projects locally, follow these steps:
 1. Clone the repository:
    ```bash
    git clone https://github.com/Shilaku-f1/Codsoft.git
+# Codsoft Projects
+
+## Live Projects
+- [Calculator](https://shilaku-f1.github.io/Codsoft/Calculator/)
+- [Landing Page](https://shilaku-f1.github.io/Codsoft/Landing%20Page/)
+- [Personal Portfolio](https://shilaku-f1.github.io/Codsoft/Personal%20Portofolio/)
