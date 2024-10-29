@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shilaku Innocent Omuyonga - Portfolio</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            overflow-x: hidden;
+        }
+        header {
+            background: linear-gradient(90deg, #0066cc, #0099ff, #ff6600, #ff9900);
+            color: white;
+            padding: 20px 0;
+        }
+        .tagline {
+            font-style: italic;
+        }
+        #about {
+            background: linear-gradient(90deg, #ff7f7f, #ffb347, #ffcc66, #ffe29a); /* Red to yellow gradient */
+            padding: 20px;
+        }
+        #skills {
+            background: linear-gradient(90deg, #7f7fff, #7fb3ff, #b3ccff, #cce7ff); /* Blue to light blue gradient */
+            padding: 20px;
+        }
+        #projects {
+            background: linear-gradient(90deg, #7fff7f, #a3ff99, #ccffcc, #e0ffe0); /* Green to light green gradient */
+            padding: 20px;
+            overflow: hidden;
+            position: relative;
+            height: 300px;
+        }
+        #resume {
+            background: linear-gradient(90deg, #ff99ff, #ffb3ff, #ffd6ff, #ffe6ff); /* Pink to light pink gradient */
+            padding: 20px;
+        }
+        #contact {
+            background: linear-gradient(90deg, #ffff99, #ffffb3, #ffffcc, #ffffe6); /* Yellow to light yellow gradient */
+            padding: 20px;
+        }
+        footer {
+            background: linear-gradient(90deg, #004080, #0059b3, #0073e6, #3399ff);
+            color: white;
+            padding: 10px 0;
+        }
+        .projects-wrapper {
+            display: flex;
+            position: absolute;
+            animation: slide 10s linear infinite;
+        }
+        @keyframes slide {
+            0% {
+                transform: translateX(100%);
+            }
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+        .project {
+            flex: 0 0 auto;
+            margin-right: 30px;
+            opacity: 1;
+            transition: transform 0.3s;
+        }
+        .project img {
+            border-radius: 10px;
+            transition: transform 0.3s;
+            width: 100%;
+        }
+        .project img:hover {
+            transform: scale(1.05);
+        }
+        .progress {
+            height: 20px;
+            border-radius: 5px;
+        }
+        .skill-bar {
+            transition: width 1s ease;
+        }
+        .skill-bar:hover {
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+    <header class="text-center">
+        <h1>Shilaku Innocent Omuyonga</h1>
+        <p class="tagline">Aspiring Developer | Passionate about Networking and AI</p>
+    </header>
+
+    <section id="about" class="text-center mb-4">
+        <h2>About Me</h2>
+        <img src="images/Me.jpg" alt="Shilaku Innocent Omuyonga" width="150">
+        <p>I am a Computer-tech with hands-on experience in web development (HTML, CSS, JavaScript), Python, C#, and SQL. Skilled in networking (CCNA 200-301), hardware maintenance, and digital marketing. My internships in UX design and front-end development have strengthened my ability to create user-focused solutions. I’ve also worked as an IT Instructor and Refurbishing Technician, gaining practical experience in troubleshooting, system repair, and teaching.</p>
+    </section>
+
+    <section id="skills" class="mb-4">
+        <h2 class="text-center">Skills</h2>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="progress mb-2">
+                        <div class="progress-bar skill-bar" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">HTML & CSS</div>
+                    </div>
+                    <div class="progress mb-2">
+                        <div class="progress-bar skill-bar" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">JavaScript</div>
+                    </div>
+                    <div class="progress mb-2">
+                        <div class="progress-bar skill-bar" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">C#</div>
+                    </div>
+                    <div class="progress mb-2">
+                        <div class="progress-bar skill-bar" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">Networking</div>
+                    </div>
+                    <div class="progress mb-2">
+                        <div class="progress-bar skill-bar" role="progressbar" style="width: 70%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">Responsive Web Design</div>
+                    </div>
+                    <div class="progress mb-2">
+                        <div class="progress-bar skill-bar" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">Python</div> <!-- Corrected this div -->
+                    </div>
+                    <div class="progress mb-2">
+                        <div class="progress-bar skill-bar" role="progressbar" style="width: 60%;" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">Data Science Basics</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    </section>
+
+    <section id="projects" class="mb-4">
+        <h2 class="text-center">Projects</h2>
+        <div class="container">
+            <div class="projects-wrapper">
+                <div class="project">
+                    <h3>Portfolio Website</h3>
+                    <p>A personal portfolio website showcasing my skills and projects using HTML, CSS, and JavaScript.</p>
+                    <img src="images/Web.jpg" alt="Portfolio Website" class="img-fluid">
+                </div>
+                <div class="project">
+                    <h3>Milele University Portal</h3>
+                    <p>A university portal developed with PHP and XAMPP, featuring user registration and login functionality.</p>
+                    <img src="images/Milele.jpg" alt="University Portal" class="img-fluid">
+                </div>
+                <div class="project">
+                    <h3>Network Diagram Tool</h3>
+                    <p>A Python application that creates network diagrams using the NetworkX library for visualizing networks.</p>
+                    <img src="images/Networking.jpg" alt="Network Diagram Tool" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="resume" class="mb-4">
+        <h2 class="text-center">Resume</h2>
+        <p class="text-center"><a href="CURRICULUM VITAE.pdf" download class="btn btn-primary">Download my resume</a></p>
+    </section>
+
+    <section id="contact" class="mb-4">
+        <h2 class="text-center">Contact Me</h2>
+        <p class="text-center">Email: shilakuinnocent@gmail.com</p>
+        <p class="text-center">Phone: +254708741173</p>
+    </section>
+
+    <footer class="text-center">
+        <p>&copy; 2024 Shilaku Innocent Omuyonga. All rights reserved.</p>
+        <p><a href="www.linkedin.com/in/innocent-shilaku-a2791a25b" class="text-white">LinkedIn</a> | <a href="https://github.com/Shilaku-f1" class="text-white">GitHub</a> | <a href="#" class="text-white">Instagram</a></p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

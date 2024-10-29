@@ -1,0 +1,59 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+.tagline {
+    font-style: italic;
+}
+
+section {
+    padding: 20px;
+    margin: 10px 0;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#about img {
+    max-width: 150px;
+    border-radius: 50%;
+}
+
+.project {
+    margin-bottom: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #333;
+    color: #fff;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+.project img {
+    width: 100%; /* Make the image responsive within the container */
+    height: auto; /* Maintain aspect ratio */
+    max-width: 300px; /* Set a max width for large images */
+    max-height: 200px; /* Set a max height */
+    border-radius: 10px; /* Optional: rounded corners for a polished look */
+    object-fit: cover; /* Ensures the image fills the area without distortion */
+    transition: transform 0.1s;
+}

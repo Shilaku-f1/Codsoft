@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Innovate Solutions - Leading IT Partner</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="overlay"></div>
+        <h1>Innovate <span class="highlight">Solutions</span></h1>
+        <p>Empowering your digital future</p>
+        <button onclick="scrollToSection('about')">Discover More</button>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="fade-in">
+        <h2>About Us</h2>
+        <p>Innovate Solutions is a leading IT company providing comprehensive digital services to fuel your growth in a tech-driven world.</p>
+        <button onclick="scrollToSection('services')">Our Services</button>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="fade-in">
+        <h2>Our Services</h2>
+        <div class="service-card">
+            <i class="fas fa-clipboard-check fa-2x"></i>
+            <h3>Consulting</h3>
+            <p>Expert advice for your tech transformations and business strategy.</p>
+        </div>
+        <div class="service-card">
+            <i class="fas fa-laptop-code fa-2x"></i>
+            <h3>Development</h3>
+            <p>Custom software solutions built to drive your success.</p>
+        </div>
+        <div class="service-card">
+            <i class="fas fa-headset fa-2x"></i>
+            <h3>Support</h3>
+            <p>Round-the-clock assistance for seamless operations.</p>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="fade-in">
+        <h2>Client Feedback</h2>
+        <div class="carousel">
+            <div class="testimonial-slide">
+                <p>"Innovate Solutions exceeded our expectations. A++!"</p>
+                <p>- Alex J.</p>
+            </div>
+            <div class="testimonial-slide">
+                <p>"Their support and expertise are unmatched!"</p>
+                <p>- Sarah K.</p>
+            </div>
+            <div class="testimonial-slide">
+                <p>"Highly recommend Innovate for any tech needs!"</p>
+                <p>- Mark L.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="fade-in">
+        <h2>Get in Touch</h2>
+        <form id="contactForm">
+            <input type="text" placeholder="Your Name" id="name" required>
+            <input type="email" placeholder="Your Email" id="email" required>
+            <textarea placeholder="Your Message" id="message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <script>
+        // Smooth scroll
+        function scrollToSection(sectionId) {
+            document.getElementById(sectionId).scrollIntoView({ behavior: "smooth" });
+        }
+
+        // Contact form validation
+        document.getElementById("contactForm").onsubmit = function(e) {
+            e.preventDefault();
+            alert("Message sent! We will be in touch soon.");
+            document.getElementById("contactForm").reset();
+        };
+    </script>
+</body>
+</html>
